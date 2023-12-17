@@ -6,7 +6,7 @@ const Navbar = (props) => {
     return (
         <nav className="navbar">
             <div className="container-fluid">
-                <a className="navbar-brand" href=""></a>
+                <a className="navbar-brand" href={props.navbarUrl}>{props.navbarLabel}</a>
             </div>
         </nav>
     );
