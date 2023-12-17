@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 
-const BootstrapCard = (props) => {
+const Card = (props) => {
     return (
         <div className="card m-5">
             <img className="card-img-top" src={props.imageSrc} alt="Card image cap" />
@@ -15,7 +15,7 @@ const BootstrapCard = (props) => {
     );
 };
 
-BootstrapCard.propTypes = {
+Card.propTypes = {
     imageSrc: PropTypes.string,
     title: PropTypes.string,
     decription: PropTypes.string,
@@ -23,7 +23,7 @@ BootstrapCard.propTypes = {
     buttonLabel: PropTypes.string
 };
 
-ReactDOM.render(<BootstrapCard
+ReactDOM.render(<Card
     imageSrc=""
     title="Card title"
     description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -33,4 +33,4 @@ ReactDOM.render(<BootstrapCard
     document.querySelector("#container")
 );
 
-export default BootstrapCard;
+export default Card;
