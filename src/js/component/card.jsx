@@ -23,13 +23,17 @@ Card.propTypes = {
     buttonLabel: PropTypes.string
 };
 
-ReactDOM.render(<Card
-    imageSrc=""
-    title="Card title"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    buttonUrl=""
-    buttonLabel="Find Out More!"
-/>,
+const cardData = {
+    imageSrc: "",
+    title: "Card title",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    buttonUrl: "",
+    buttonLabel: "Find Out More!"
+}
+
+const cardArray = [];
+
+ReactDOM.render(<cardArray />,
     document.querySelector("#container")
 );
 
