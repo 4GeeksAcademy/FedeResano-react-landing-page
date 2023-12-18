@@ -54,13 +54,16 @@ const cardArray = [
         buttonLabel="Find Out More!" />
 ];
 
+const cardCollection = () => {
+    return (
+        <div>
+            {cardArray.map((card, index) => (
+                <React.Fragment key={index}>{card}</React.Fragment>
+            ))}
+        </div>
+    );
+};
 
-
-ReactDOM.render(
-    <div>
-        {cardArray}
-    </div>,
-    document.querySelector("#container")
-);
+ReactDOM.render(<cardCollection />,document.querySelector("#container"));
 
 export default Card;

@@ -3,18 +3,9 @@ import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 
 const Home = () => {
-    return (
-        <div>
-            <Navbar />
-            <div className="container">
-                <Jumbotron />
-                <div>
-                    <Card />
-                </div>
-            </div>
-            <Footer />
-        </div>
-    );
+    
 };
+
+ReactDOM.render(<Home />, document.querySelector("#app"))
 
 export default Home;

@@ -10,3 +10,5 @@ const Footer = () => {
 };
 
 ReactDOM.render(<Footer />, document.querySelector("#Home"));
+
+export default Footer;
