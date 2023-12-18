@@ -18,18 +18,48 @@ const Card = (props) => {
 Card.propTypes = {
     imageSrc: PropTypes.string,
     title: PropTypes.string,
-    decription: PropTypes.string,
+    description: PropTypes.string,
     buttonUrl: PropTypes.string,
     buttonLabel: PropTypes.string
 };
 
+const cardArray = [
+    <Card
+        key={0}
+        imageSrc="src/img/rigo-baby.jpg"
+        title="Card title"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        buttonUrl="src/img/rigo-baby.jpg"
+        buttonLabel="Find Out More!" />,
+    <Card
+        key={1}
+        imageSrc="src/img/rigo-baby.jpg"
+        title="Card title"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        buttonUrl=""
+        buttonLabel="Find Out More!" />,
+    <Card
+        key={2}
+        imageSrc="src/img/rigo-baby.jpg"
+        title="Card title"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        buttonUrl=""
+        buttonLabel="Find Out More!" />,
+    <Card
+        key={3}
+        imageSrc="src/img/rigo-baby.jpg"
+        title="Card title"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        buttonUrl=""
+        buttonLabel="Find Out More!" />
+];
 
-ReactDOM.render(<Card
-    imageSrc=""
-    title="Card title"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    buttonUrl=""
-    buttonLabel="Find Out More!" />,
+
+
+ReactDOM.render(
+    <div>
+        {cardArray}
+    </div>,
     document.querySelector("#container")
 );
 
