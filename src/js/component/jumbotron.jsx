@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 
 const Jumbotron = (props) => {
@@ -19,9 +18,9 @@ Jumbotron.propTypes = {
     buttonUrl: PropTypes.string
 };
 
-title="A Warm Welcome!"
-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-buttonLabel="Call to action!"
-buttonURL="https://reactjs.org/"
+title = "A Warm Welcome!"
+description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+buttonLabel = "Call to action!"
+buttonURL = "https://reactjs.org/"
 
 export default Jumbotron;

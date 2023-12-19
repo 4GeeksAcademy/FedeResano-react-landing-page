@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 const Footer = () => {
     return (
@@ -8,7 +7,5 @@ const Footer = () => {
         </footer>
     );
 };
-
-ReactDOM.render(<Footer />, document.querySelector("#Home"));
 
 export default Footer;

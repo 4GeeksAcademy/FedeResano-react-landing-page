@@ -1,16 +1,17 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import PropTypes from "prop-types";
-import Navbar from "./navbar";
-//import navbar from "./component/";
-//import navbar from "./component";
-//import Footer from "./component";
+import Navbar from "./navbar.jsx";
+import Jumbotron from "./jumbotron.jsx";
+import CardCollection from "./card.jsx";
+import Footer from "./footer.jsx";
 
 const Home = () => {
-    return(
-    <div>
-        <Navbar />
-    </div>
+    return (
+        <div>
+            <Navbar />
+            <Jumbotron />
+            <CardCollection />
+            <Footer />
+        </div>
     );
 };
 
