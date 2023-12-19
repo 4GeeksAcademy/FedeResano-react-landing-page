@@ -17,10 +17,12 @@ Jumbotron.propTypes = {
     buttonLabel: PropTypes.string,
     buttonUrl: PropTypes.string
 };
+Jumbotron.defaultProps = {
+    title: "A Warm Welcome!",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    buttonLabel: "Call to action!",
+    buttonURL: "https://reactjs.org/"
+}
 
-title = "A Warm Welcome!"
-description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-buttonLabel = "Call to action!"
-buttonURL = "https://reactjs.org/"
 
 export default Jumbotron;

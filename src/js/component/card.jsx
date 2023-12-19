@@ -63,4 +63,4 @@ const CardCollection = () => {
     );
 };
 
-export default Card;
+export default CardCollection;
