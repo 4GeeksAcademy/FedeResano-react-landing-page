@@ -15,3 +15,7 @@ footer {
   li {
     padding: 2px;
   }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }

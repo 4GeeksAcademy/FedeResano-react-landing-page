@@ -6,10 +6,12 @@ const Card = (props) => {
         <div className="col-lg-3 col-md-6 mb-4">
             <div className="card">
                 <img className="card-img-top" src={props.imageSrc} alt="Card image cap" />
-                <div className="card-body">
-                    <h5 className="card-title">{props.title}</h5>
-                    <p className="card-text">{props.description}</p>
-                    <a href={props.buttonUrl} className="btn btn-primary">{props.buttonLabel}</a>
+                <div className="card-body d-flex flex-column">
+                    <h5 className="card-title text-center">{props.title}</h5>
+                    <p className="card-text text-center">{props.description}</p>
+                    <div className="mt-auto text-center">
+                        <a href={props.buttonUrl} className="btn btn-primary">{props.buttonLabel}</a>
+                    </div>
                 </div>
             </div>
         </div>
