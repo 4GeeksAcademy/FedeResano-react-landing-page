@@ -54,7 +54,7 @@ const cardArray = [
         buttonLabel="Find Out More!" />
 ];
 
-const cardCollection = () => {
+const CardCollection = () => {
     return (
         <div>
             {cardArray.map((card, index) => (
@@ -63,7 +63,5 @@ const cardCollection = () => {
         </div>
     );
 };
-
-ReactDOM.render(<cardCollection />,document.querySelector("#container"));
 
 export default Card;

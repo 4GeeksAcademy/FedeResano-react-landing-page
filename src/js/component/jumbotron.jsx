@@ -19,13 +19,9 @@ Jumbotron.propTypes = {
     buttonUrl: PropTypes.string
 };
 
-ReactDOM.render(<Jumbotron
-    title="A Warm Welcome!"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    buttonLabel="Call to action!"
-    buttonURL="https://reactjs.org/"
-/>,
-    document.querySelector("#container")
-);
+title="A Warm Welcome!"
+description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+buttonLabel="Call to action!"
+buttonURL="https://reactjs.org/"
 
 export default Jumbotron;

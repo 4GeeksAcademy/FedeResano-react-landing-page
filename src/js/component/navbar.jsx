@@ -28,6 +28,4 @@ const Navbar = () => {
     );
 };
 
-ReactDOM.render(<Navbar />, document.querySelector("#Home"));
-
 export default Navbar;
