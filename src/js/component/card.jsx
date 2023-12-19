@@ -3,12 +3,14 @@ import PropTypes from "prop-types";
 
 const Card = (props) => {
     return (
-        <div className="card m-5">
-            <img className="card-img-top" src={props.imageSrc} alt="Card image cap" />
-            <div className="card-body">
-                <h5 className="card-title">{props.title}</h5>
-                <p className="card-text">{props.description}</p>
-                <a href={props.buttonUrl} className="btn btn-primary">{props.buttonLabel}</a>
+        <div className="col-lg-3 col-md-6 mb-4">
+            <div className="card">
+                <img className="card-img-top" src={props.imageSrc} alt="Card image cap" />
+                <div className="card-body">
+                    <h5 className="card-title">{props.title}</h5>
+                    <p className="card-text">{props.description}</p>
+                    <a href={props.buttonUrl} className="btn btn-primary">{props.buttonLabel}</a>
+                </div>
             </div>
         </div>
     );
@@ -22,42 +24,26 @@ Card.propTypes = {
     buttonLabel: PropTypes.string
 };
 
+Card.defaultProps = {
+    imageSrc: "https://imgs.search.brave.com/u6KlmpkirvNxPeUboqwoGqbXxmwBfSbZ1UQ5QWmgb6k/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zcC1h/by5zaG9ydHBpeGVs/LmFpL2NsaWVudC90/b193ZWJwLHFfZ2xv/c3N5LHJldF9pbWcs/d184MDAsaF81Mzgv/aHR0cHM6Ly9ibG9n/LnNuYXBwYS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMjIv/MDIvTmV3T2xkU3Rv/Y2stZXhhbXBsZS1p/bWFnZS5qcGc",
+    title: "Card title",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    buttonUrl: "",
+    buttonLabel: "Find Out More!"
+}
+
 const cardArray = [
-    <Card
-        key={0}
-        imageSrc="src/img/rigo-baby.jpg"
-        title="Card title"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        buttonUrl="src/img/rigo-baby.jpg"
-        buttonLabel="Find Out More!" />,
-    <Card
-        key={1}
-        imageSrc="src/img/rigo-baby.jpg"
-        title="Card title"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        buttonUrl=""
-        buttonLabel="Find Out More!" />,
-    <Card
-        key={2}
-        imageSrc="src/img/rigo-baby.jpg"
-        title="Card title"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        buttonUrl=""
-        buttonLabel="Find Out More!" />,
-    <Card
-        key={3}
-        imageSrc="src/img/rigo-baby.jpg"
-        title="Card title"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        buttonUrl=""
-        buttonLabel="Find Out More!" />
+    <Card />,
+    <Card />,
+    <Card />,
+    <Card />
 ];
 
 const CardCollection = () => {
     return (
-        <div>
-            {cardArray.map((card, index) => (
-                <React.Fragment key={index}>{card}</React.Fragment>
+        <div className="row">
+            {Array.from({ length: 4 }).map((_, index) => (
+                <Card key={index} />
             ))}
         </div>
     );
